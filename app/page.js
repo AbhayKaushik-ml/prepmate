@@ -2,7 +2,6 @@
 
 import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
-import { Button } from "/components/ui/button";
 import Image from "next/image";
 
 export default function LandingPage() {
@@ -31,13 +30,12 @@ export default function LandingPage() {
               interactive practice tests, and personalized learning paths.
             </p>
             <div className="flex flex-col md:flex-row justify-center gap-4">
-              <Button 
-                size="lg" 
-                className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg"
+              <button 
+                className="inline-flex items-center justify-center rounded-md bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg font-medium"
                 onClick={handleGetStarted}
               >
                 Get Started
-              </Button>
+              </button>
             </div>
           </div>
 
@@ -137,4 +135,4 @@ export default function LandingPage() {
       </footer>
     </div>
   );
-}
+} 
