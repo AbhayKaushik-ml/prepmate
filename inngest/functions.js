@@ -1,10 +1,8 @@
-import { generateNotes } from "@/configs/AiModel";
+import { generateNotes } from "/configs/AiModel";
 import { inngest } from "./client";
-import { CHAPTER_NOTES_TABLE, STUDY_MATERIAL_TABLE } from "@/configs/schema";
+import { CHAPTER_NOTES_TABLE, STUDY_MATERIAL_TABLE } from "/configs/schema";
 import { eq } from "drizzle-orm";
-import { db } from "@/configs/db";
-import { STUDY_MATERIAL_TABLE } from "@/configs/schema";
-import { CHAPTER_NOTES_TABLE } from "@/configs/schema";
+import { db } from "/configs/db";
 
 // Define the hello world function that responds to test/hello.world events
 export const helloWorld = inngest.createFunction(
